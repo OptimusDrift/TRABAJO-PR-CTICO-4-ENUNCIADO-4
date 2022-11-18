@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad_ventilador: 0.1
+  velocidad_ventilador: 0
   taza: {fileID: 8683647453741241026}
 --- !u!1 &1940063435
 GameObject:
