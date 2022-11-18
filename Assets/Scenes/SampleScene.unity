@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 128001496}
   - component: {fileID: 128001495}
   - component: {fileID: 128001494}
+  - component: {fileID: 128001498}
   m_Layer: 0
   m_Name: CercaA
   m_TagString: Untagged
@@ -313,6 +314,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &128001498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128001493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: 5
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &130653298
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +340,7 @@ GameObject:
   - component: {fileID: 130653301}
   - component: {fileID: 130653300}
   - component: {fileID: 130653299}
+  - component: {fileID: 130653303}
   m_Layer: 0
   m_Name: LejosA
   m_TagString: Untagged
@@ -406,6 +422,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &130653303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130653298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: 15
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &447526018
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +615,7 @@ GameObject:
   - component: {fileID: 648494968}
   - component: {fileID: 648494967}
   - component: {fileID: 648494966}
+  - component: {fileID: 648494970}
   m_Layer: 0
   m_Name: LejosB
   m_TagString: Untagged
@@ -666,6 +697,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648494970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648494965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: -15
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &686576751
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +881,7 @@ GameObject:
   - component: {fileID: 830442684}
   - component: {fileID: 830442683}
   - component: {fileID: 830442682}
+  - component: {fileID: 830442686}
   m_Layer: 0
   m_Name: NormalB
   m_TagString: Untagged
@@ -917,6 +963,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830442686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830442681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: -10
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1072,7 @@ GameObject:
   - component: {fileID: 1295639853}
   - component: {fileID: 1295639852}
   - component: {fileID: 1295639851}
+  - component: {fileID: 1295639855}
   m_Layer: 0
   m_Name: NormalA
   m_TagString: Untagged
@@ -1093,6 +1154,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1295639855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295639850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: 10
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &1448701155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1180,7 @@ GameObject:
   - component: {fileID: 1448701158}
   - component: {fileID: 1448701157}
   - component: {fileID: 1448701156}
+  - component: {fileID: 1448701160}
   m_Layer: 0
   m_Name: Centrado
   m_TagString: Untagged
@@ -1186,6 +1262,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448701160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448701155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: 0.1
+  taza: {fileID: 8683647453741241026}
 --- !u!1 &1940063435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1288,7 @@ GameObject:
   - component: {fileID: 1940063438}
   - component: {fileID: 1940063437}
   - component: {fileID: 1940063436}
+  - component: {fileID: 1940063440}
   m_Layer: 0
   m_Name: CercaB
   m_TagString: Untagged
@@ -1279,6 +1370,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940063440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940063435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf4ae3ebc982bd49be0845a73cd0e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_ventilador: -5
+  taza: {fileID: 8683647453741241026}
 --- !u!23 &1580737698267220071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1535,6 +1640,14 @@ MonoBehaviour:
   cercaA: {fileID: 128001493}
   normalA: {fileID: 1295639850}
   lejosA: {fileID: 130653298}
+  posiciones:
+  - {fileID: 648494965}
+  - {fileID: 830442681}
+  - {fileID: 1940063435}
+  - {fileID: 1448701155}
+  - {fileID: 128001493}
+  - {fileID: 1295639850}
+  - {fileID: 130653298}
 --- !u!1 &8860056717204148622
 GameObject:
   m_ObjectHideFlags: 0

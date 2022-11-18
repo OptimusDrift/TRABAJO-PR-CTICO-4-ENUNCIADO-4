@@ -17,8 +17,7 @@ public class Tubo : MonoBehaviour
 {
     private float caos;
     private float velocidad;
-    [SerializeField]
-    private float velocidad_ventilador = 0;
+    public float velocidad_ventilador = 0;
     [SerializeField]
     private GameObject lejosB;
     [SerializeField]
@@ -33,37 +32,35 @@ public class Tubo : MonoBehaviour
     private GameObject normalA;
     [SerializeField]
     private GameObject lejosA;
-
-
+    [SerializeField]
+    private GameObject[] posiciones;
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
         caos = Random.Range(-.5f, .5f);
+        Velocity();
+        
+        GetComponent<Rigidbody>().velocity = new Vector3(0, velocidad_ventilador * caos, 0);
+    }
 
-        GetComponent<Rigidbody>().velocity = new Vector3(0, velocidad_ventilador, 0);
-        List<Arreglos> array = new List<Arreglos>();
-        var a = new Arreglos();
-        a.Arreglo(lejosB, Distance(lejosB));
-        array.Add(a);
-        a.Arreglo(normalB, Distance(normalB));
-        array.Add(a);
-        a.Arreglo(cercaB, Distance(cercaB));
-        array.Add(a);
-        a.Arreglo(centro, Distance(centro));
-        array.Add(a);
-        a.Arreglo(cercaA, Distance(cercaA));
-        array.Add(a);
-        a.Arreglo(normalA, Distance(normalA));
-        array.Add(a);
-        a.Arreglo(lejosA, Distance(lejosA));
-        array.Add(a);
-
-
-        array.Sort(
-        );
-        Debug.Log(array[0].distancia);
+    void Velocity(){
+        var distancias = new float[posiciones.Length];
+        for (int i = 0; i < distancias.Length; i++)
+        {
+            distancias[i] = Vector3.Distance(transform.position,posiciones[i].transform.position);
+        }
+        
+        var min = Mathf.Min(distancias);
+        for (int i = 0; i < posiciones.Length; i++)
+        {
+            if (distancias[i] == min)
+            {
+                posiciones[i].GetComponent<LejosB>().Fly(Vector3.Distance(transform.position,posiciones[i].transform.position));
+                break;
+            }
+        }
     }
 
     private int Compare(float a, float b, float c){
